@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import OpenAISwift
 
 @main
 struct ChatGPTAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if Constants.openAPIKey.isEmpty {
+                IncompatibleView()
+            } else {
+                ChatView()
+            }
         }
     }
 }
