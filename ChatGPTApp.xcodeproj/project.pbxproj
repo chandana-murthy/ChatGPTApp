@@ -11,7 +11,6 @@
 		140240CA2950D887007207F5 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140240C92950D887007207F5 /* ChatView.swift */; };
 		140240CC2950D888007207F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140240CB2950D888007207F5 /* Assets.xcassets */; };
 		140240CF2950D888007207F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140240CE2950D888007207F5 /* Preview Assets.xcassets */; };
-		140240D72950E4EA007207F5 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 140240D62950E4EA007207F5 /* OpenAISwift */; };
 		140C541E2A75154400C0D7F0 /* IncompatibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C541D2A75154400C0D7F0 /* IncompatibleView.swift */; };
 		143F5EE429CA0F8000846845 /* TipCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143F5EE329CA0F8000846845 /* TipCalculatorView.swift */; };
 		144B45D82A81640A00B82C75 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144B45D72A81640A00B82C75 /* ChatMessage.swift */; };
@@ -42,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140240D72950E4EA007207F5 /* OpenAISwift in Frameworks */,
 				144B45DF2A816F1500B82C75 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +131,6 @@
 			);
 			name = ChatGPTApp;
 			packageProductDependencies = (
-				140240D62950E4EA007207F5 /* OpenAISwift */,
 				144B45DE2A816F1500B82C75 /* Alamofire */,
 			);
 			productName = ChatGPTApp;
@@ -165,7 +162,6 @@
 			);
 			mainGroup = 140240BB2950D887007207F5;
 			packageReferences = (
-				140240D52950E4EA007207F5 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 				144B45DD2A816F1500B82C75 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 140240C52950D887007207F5 /* Products */;
@@ -405,14 +401,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		140240D52950E4EA007207F5 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		144B45DD2A816F1500B82C75 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -424,11 +412,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		140240D62950E4EA007207F5 /* OpenAISwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 140240D52950E4EA007207F5 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
-		};
 		144B45DE2A816F1500B82C75 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 144B45DD2A816F1500B82C75 /* XCRemoteSwiftPackageReference "Alamofire" */;
